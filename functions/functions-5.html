@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // callback function
+
+    function sayMyName(name) {
+      console.log('antes do callback')
+      name()
+      /*
+      mesma coisa:
+      function name() {
+        console.log('estou em callback')
+      }
+      name()
+      */
+      console.log('depois do callback')
+    }
+
+    sayMyName(
+      () => {
+        console.log('estou em callback')
+      }
+    )
+
+
+  </script>
+</body>
+</html>
