@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Function Constructor()
+    // expressão new
+    // cria um novo object
+    // this - palavra-chave
+    function Person(name) {
+      this.name = name
+      this.walk = () => {
+        return this.name + ' está andando'
+      }
+    }
+    const matheus = new Person('matheus')
+    const joao = new Person('joao')
+    console.log(matheus.walk())
+    console.log(joao.walk())
+
+    
+
+  </script>
+</body>
+</html>
