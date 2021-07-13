@@ -8,13 +8,14 @@
 </head>
 <body>
   <script>
-    // transformando letras maiusculas em minusculas
-    let word = "Hello Wold!"
-    console.log(word.toUpperCase())
-    console.log(word.toLowerCase())
-    // toUpperCase() transforma em maiuscula
-    // toLowerCase() transforma em minuscula
-    
+    // transformando array em um texto, e trocar os espaços por _
+    let frase = "Hello My World!"
+    let array = frase.split(" ")
+    let colocarUnderscore = array.join("_")
+    console.log(colocarUnderscore.toUpperCase())
+    // split para transformar em array e selecionar qual caractere modificar
+    // join junta o array e coloca os caracteres
+
   </script>
 </body>
 </html>
