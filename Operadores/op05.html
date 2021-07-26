@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+      - Operadores Condicionais (Ternário)
+        * Dependendo da condição, 
+        recebemos valores diferente
+        # Condição então valor 1 se não valor 2
+        / condition ? value1 : value2 / 
+    */
+    // exemplos
+
+    // cafe da manha
+    let pao = false
+    let queijo = true
+
+    const breakFastGood = pao && queijo ? 'café da manha bom' : 'café da manha ruim'
+    const breakFastBad = pao || queijo ? 'café da manha bom' : 'café da manha ruim'
+
+    console.log(breakFastGood, breakFastBad)
+
+    // maior de 18
+
+    let age = 18
+
+    const drive = age >= 18 ? 'can drive' : 'cannot drive'
+
+    console.log(drive)
+    
+  </script>
+</body>
+</html>
